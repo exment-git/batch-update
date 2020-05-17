@@ -5,6 +5,7 @@
 ##### ---------Change Variables---------
 # Please set composer path. Need to call from cron.
 composer_path=''
+home_path=''
 
 
 ##### ---------Logic Start---------
@@ -12,6 +13,10 @@ if [ -n "$composer_path" ]; then
 composer=$composer_path
 else
 composer='composer'
+fi
+
+if [ -n "$home_path" ]; then
+export PATH=${home_path}/bin:$PATH
 fi
 
 
