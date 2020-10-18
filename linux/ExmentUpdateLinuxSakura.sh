@@ -20,12 +20,12 @@ echo Execute Backup
 php artisan exment:backup
 
 echo Update exceedone/laravel-admin
-nice -n 20 $composer require exceedone/laravel-admin
+COMPOSER_MEMORY_LIMIT=-1 nice -n 20 $composer require exceedone/laravel-admin
 
 
 echo Update exceedone/exment
 sleep 2
-nice -n 20 $composer require exceedone/exment
+COMPOSER_MEMORY_LIMIT=-1 nice -n 20 $composer require exceedone/exment
 
 
 echo Execute Update
