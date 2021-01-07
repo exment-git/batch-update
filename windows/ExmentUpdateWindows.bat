@@ -1,3 +1,8 @@
+@echo off
+rem v1.1.1
+
+cd %~dp0
+
 echo ---------Exment更新開始---------
 echo バックアップ実行
 call php artisan exment:backup
