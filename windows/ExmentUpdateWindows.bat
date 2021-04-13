@@ -1,5 +1,5 @@
 @echo off
-rem v1.1.1
+rem v1.2.0
 
 cd %~dp0
 
@@ -7,12 +7,8 @@ echo ---------Exment更新開始---------
 echo バックアップ実行
 call php artisan exment:backup
 
-echo -- exceedone/laravel-admin最新版取得
-call composer require exceedone/laravel-admin
-
-echo exceedone/exment最新版取得
-timeout 2
-call composer require exceedone/exment
+echo -- パッケージ最新化
+call composer update
 
 echo Exmentアップデート
 timeout 2

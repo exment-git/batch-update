@@ -1,5 +1,5 @@
 #!/bin/sh
-###v1.1.0
+###v1.2.0
 
 
 ##### ---------Change Variables---------
@@ -24,13 +24,9 @@ echo ---------Start Exment Update---------
 echo Execute Backup
 php artisan exment:backup
 
-echo Update exceedone/laravel-admin
-$composer require exceedone/laravel-admin
 
-
-echo Update exceedone/exment
-sleep 2
-$composer require exceedone/exment
+echo Update Package
+$composer update
 
 
 echo Execute Update
